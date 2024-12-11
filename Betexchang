@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Betting Site</title>
+</head>
+<body>
+    <header>
+        <h1>Betting Site</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Place Bet</h2>
+            <form id="bet-form">
+                <label for="bet-amount">Amount:</label>
+                <input type="number" id="bet-amount" required>
+                <label for="bet-type">Type:</label>
+                <select id="bet-type" required>
+                    <option value="win">Win</option>
+                    <option value="loss">Loss</option>
+                </select>
+                <button>Place Bet</button>
+            </form>
+        </section>
+        <section>
+            <h2>Payment Gateway</h2>
+            <form action="(link unavailable)" method="post">
+                <input type="hidden" name="amount" id="payment-amount">
+                <input type="hidden" name="currency" value="USD">
+                <input type="hidden" name="description" value="Betting Site Payment">
+                <button id="pay-btn">Pay Now</button>
+            </form>
+        </section>
+        <section>
+            <h2>Login/Register</h2>
+            <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+                <button>Login</button>
+            </form>
+            <form id="register-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" required>
+                <button>Register</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
+```
